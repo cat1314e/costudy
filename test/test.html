@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #co{
+            background: #cccccc;
+            width: 200Px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="app">
+    <div id="co" v-if="s === true">
+        <button @click="actionClick">we</button>
+    </div>
+</div>
+
+
+
+<script src="myvue.js"></script>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                s: true,
+            }
+        },
+        methods:{
+            actionClick: function(event) {
+                this.s = false
+            }
+        }
+    })
+
+</script>
+</body>
+</html>
