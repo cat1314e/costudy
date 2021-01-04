@@ -24,28 +24,8 @@
 </template>
 
 <script>
-import pic from '../assets/logo.png'
-let n22 = [
-  {
-    reportUserName: 'aaa',
-    reportTime1: '2020-10-11',
-    reportTime2: '00:00',
-    reportType: '啊是不是',
-    reportRange: 'sadjwda',
-    reportDescribe: '达瓦的吧安慰你都看不到帮我卡巴那俺文件夹八度空间我不懂',
-    reportPhoto: pic
-  },
-  {
-    reportUserName: 'aaa',
-    reportTime1: '2020-10-11',
-    reportTime2: '00:00',
-    reportType: 'sadddw不是',
-    reportRange: 'sadjwda',
-    reportDescribe: '达瓦的吧',
-    reportPhoto: pic
-  }
-]
-
+import n21 from '../message.js'
+let n22 = n21
 
 export default {
   name: 'userPage',

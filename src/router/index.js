@@ -16,7 +16,7 @@ const routes = [
         // redirect 用来做重定向, 也就是访问 / 的时候会重定向到 /home
         // 并且访问 /home 会跳转到 home 组件
         // 所以现在访问根路由 / 就会跳转到 home 组件
-        redirect: '/detain',
+        redirect: '/sign',
     },
     {
         path: '/sign',
