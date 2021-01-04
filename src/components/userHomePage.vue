@@ -15,7 +15,7 @@
       <div class="co-buttons-update">
         <button class="co-button-update">处理</button>
         <button class="co-button-update">忽略</button>
-        <button class="co-button-update">拘留</button>
+        <button @click="actionClickDetain" class="co-button-update">拘留</button>
       </div>
     </Card>
   </div>
@@ -58,6 +58,12 @@ export default {
   methods: {
     actionClickUserBack: function() {
       console.log('dark soul')
+      let t = 'http://192.168.1.113:8080' + '/homepage'
+      window.location.href = t
+    },
+    actionClickDetain: function() {
+      let t = 'http://192.168.1.113:8080' + '/detain'
+      window.location.href = t
     }
   },
 }
