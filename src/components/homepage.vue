@@ -53,7 +53,7 @@ export default {
     }
   },
   methods: {
-    actionClickUser: function(event) {
+    actionClickUser: function() {
       console.log('dark bad')
     }
   },
