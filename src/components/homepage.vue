@@ -1,6 +1,6 @@
 <template >
 <!--  v-show="1 === 2"-->
-  <div v-show="1 === 2" style="background:#eee; padding: 5px; line-height: 5vh" >
+  <div style="background:#eee; padding: 5px; line-height: 5vh" >
         <Card :bordered="false" v-for="(m, i) in userMessage"
               v-bind:key="i"
               style="border: 1px solid #eee; padding: 2px 0; margin: 5px 0;"
@@ -55,6 +55,8 @@ export default {
   methods: {
     actionClickUser: function() {
       console.log('dark bad')
+      let t = 'http://192.168.1.113:8080' + '/userpage'
+      window.location.href = t
     }
   },
 }

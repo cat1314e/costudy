@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Form v-show="sign === true" ref="formInline" :model="formInline" :rules="ruleInline" inline label-position="top" label-height="50px">
+    <Form  ref="formInline" :model="formInline" :rules="ruleInline" inline label-position="top" label-height="50px">
       <div class="co-portrait">
         <img id="portrait" :src="url" alt="co-portrait">
       </div>
@@ -19,15 +19,11 @@
       </FormItem>
     </Form>
 
-    <!--    <message123 name="wo de shi jie"></message123>-->
-    <!--    <message1234 name="dawjdd"></message1234>-->
   </div>
 
 </template>
 <script>
 import pic from '../assets/logo.png'
-// import homepage from './components/homepage.vue'
-// import userHomePage from './components/userHomePage.vue'
 export default {
   data: function() {
     return {
@@ -54,17 +50,17 @@ export default {
       this.$refs[name].validate((valid) => {
         if (valid) {
           this.$Message.success('登录成功!')
-          this.sign = false
+          console.log('sadsd')
+
+          let t = 'http://192.168.1.113:8080' + '/homepage'
+          window.location.href = t
+          console.log('登录成功!')
         } else {
           this.$Message.error('账户或密码错误!')
         }
       })
     }
   },
-  // components: {
-  //   message123: homepage,
-  //   message1234: userHomePage,
-  // }
 }
 </script>
 

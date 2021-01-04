@@ -19,13 +19,11 @@
       </div>
     </Card>
   </div>
-  <message12345 name="dasd"></message12345>
 
 
 </template>
 
 <script>
-import detain from './../controlThing/detain.vue'
 import pic from '../assets/logo.png'
 let n22 = [
   {
@@ -54,7 +52,7 @@ export default {
   data: function() {
     return {
       userMessage: n22,
-      userControl: false,
+      userControl: true,
     }
   },
   methods: {
@@ -62,9 +60,6 @@ export default {
       console.log('dark soul')
     }
   },
-  components: {
-    message12345: detain,
-  }
 }
 </script>
 
@@ -73,7 +68,6 @@ export default {
   position: absolute;
   right: 5%;
   top: 5%;
-
 }
 .co-button-update{
   background: white;
