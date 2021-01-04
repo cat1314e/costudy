@@ -2,7 +2,7 @@
   <div>
     <form  method="get" style="border-bottom: solid black 1px; padding: 10px;">
       <label for="invitation">邀请码</label>
-      <input id="invitation" value=invitation type="text" style="width: 50vw; height: 20px"/>
+      <input id="invitation" value='invitation' type="text" style="width: 50vw; height: 20px"/>
       <input type="submit" value="查询">
     </form>
     <div>
@@ -38,7 +38,7 @@
 <script>
 export default {
   name: "detain",
-  props: ['invitation'],
+  // props: ['invitation'],
 
 }
 </script>
