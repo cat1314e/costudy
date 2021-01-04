@@ -2,7 +2,7 @@
   <div>
     <form  method="get" style="border-bottom: solid black 1px; padding: 10px;">
       <label for="invitation">邀请码</label>
-      <input id="invitation" value="asda" type="text" style="width: 50vw; height: 20px"/>
+      <input id="invitation" value=invitation type="text" style="width: 50vw; height: 20px"/>
       <input type="submit" value="查询">
     </form>
     <div>
@@ -17,6 +17,7 @@
       <p>预计于2020-2-21 11:23:12释放</p>
       <button style="position: relative; width: 80vw; height: 40px; left: 8vw">确定</button>
       <div style="border-bottom: solid black 1px; padding: 10px;">
+
 
       </div>
       <div style="border-bottom: solid black 1px; padding: 10px;">
@@ -36,6 +37,8 @@
 
 <script>
 export default {
+  name: "detain",
+  props: ['invitation'],
 
 }
 </script>
