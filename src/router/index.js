@@ -8,8 +8,8 @@ Vue.use(VueRouter)
 
 import sign from '../components/sign_in'
 import homepage from '../components/homepage'
-import userpage from '../components/userHomePage'
 import detain from '../controlThing/detain'
+import handle from '../controlThing/handle'
 const routes = [
     {
         path: '/',
@@ -27,12 +27,12 @@ const routes = [
         component: homepage,
     },
     {
-        path: '/userpage',
-        component: userpage,
-    },
-    {
         path: '/detain',
         component: detain,
+    },
+    {
+        path: '/handle',
+        component: handle,
     },
 ]
 

@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <Form  ref="formInline" :model="formInline" :rules="ruleInline" inline label-position="top" label-height="50px">
+    <Form class="co-study-form" ref="formInline" :model="formInline" :rules="ruleInline" inline label-position="top" label-height="50px">
       <div class="co-portrait">
         <img id="portrait" :src="url" alt="co-portrait">
       </div>
       <FormItem class="co-zhu" prop="user">
-        <Input type="text" v-model="formInline.user" placeholder="Username">
+        <Input class="co-study-input" type="text" v-model="formInline.user" placeholder="Username">
           <Icon type="ios-person-outline" slot="prepend"></Icon>
         </Input>
       </FormItem>
       <FormItem class="co-zhu" prop="password">
-        <Input type="password" v-model="formInline.password" placeholder="Password">
+        <Input class="co-study-input" type="password" v-model="formInline.password" placeholder="Password">
           <Icon type="ios-lock-outline" slot="prepend"></Icon>
         </Input>
       </FormItem>
       <FormItem class="co-zhu">
-        <Button type="primary" @click="handleSubmit('formInline')">登录</Button>
+        <Button class="co-study-button" type="primary" @click="handleSubmit('formInline')">登录</Button>
       </FormItem>
     </Form>
 
@@ -66,7 +66,7 @@ export default {
 
 <style>
 
-Form {
+.co-study-form {
   position: absolute;
   top: 40%;
   left: 5%;
@@ -77,13 +77,15 @@ Form {
   width: 95%;
 
 }
-Input{
+.co-study-input{
   width: 100%;
 
 }
-Button{
+.co-study-button{
   width: 100%;
   left: 10%;
+  height: 45px;
+  border-radius: 5px;
 }
 .co-portrait{
   position: absolute;
@@ -107,5 +109,8 @@ Button{
   left: 50%;
   width: 100%;
   transform: translateX(-50%) translateY(-50%);
+}
+.ivu-input {
+  height: 45px;
 }
 </style>

@@ -7,7 +7,7 @@ let n21 = [
         reportType: '啊是不是',
         reportRange: 'sadjwda',
         reportDescribe: '达瓦的吧安慰你都看不到帮我卡巴那俺文件夹八度空间我不懂',
-        reportPhoto: pic
+        reportPhoto: pic,
     },
     {
         reportUserName: 'aaa',
@@ -32,6 +32,24 @@ let n21 = [
         reportTime1: '2020a11',
         reportTime2: '00:00',
         reportType: 'saddda',
+        reportRange: 'sa',
+        reportDescribe: 'afwfdawvf',
+        reportPhoto: pic
+    },
+    {
+        reportUserName: 'asff',
+        reportTime1: '2020a11',
+        reportTime2: '00:00',
+        reportType: 'aefsrfa',
+        reportRange: 'sa',
+        reportDescribe: 'afwfdawvf',
+        reportPhoto: pic
+    },
+    {
+        reportUserName: 'cccc',
+        reportTime1: '2020a11',
+        reportTime2: '00:00',
+        reportType: 'aefsrfa',
         reportRange: 'sa',
         reportDescribe: 'afwfdawvf',
         reportPhoto: pic
